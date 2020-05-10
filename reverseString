@@ -1,0 +1,16 @@
+class Solution {
+    public void reverseString(char[] s) {
+        int start = 0; 
+        int end = s.length-1;
+        
+        while (start < end){
+            char temp = s[start]; //temporary variable used to store start of array 
+            s[start] = s[end]; //sets last value of index equal to beginning 
+            s[end] = temp; //puts initial element at end of array;
+            
+            start+=1;
+            end-=1;
+
+        }
+    }
+}
